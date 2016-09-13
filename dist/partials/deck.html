@@ -1,0 +1,22 @@
+<div class="deck-view">
+    <div class="deck-container">
+        <div class="deck" layout="row" layout-align="start center">
+            <md-card class="card md-whiteframe-3dp" data-ng-repeat="card in deck" flex="15">
+                <md-content class="card-content" layout="column" layout-align="center">
+                    <div>{{card.group}}</div>
+                    <div>{{card.value}}</div>
+                </md-content>
+            </md-card>
+        </div>
+    </div>
+    <div class="shuffle">
+        <md-button class="md-fab md-primary" 
+            aria-label="shuffle"
+            data-ng-click="shuffleDialog($event)">
+            <md-tooltip md-direction="bottom">
+                Shuffle
+            </md-tooltip>
+            <md-icon md-svg-src="/img/ic_shuffle_48px.svg"></md-icon>
+        </md-button>
+    </div>
+</div>

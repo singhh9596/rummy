@@ -1,0 +1,20 @@
+<div layout="column" layout-align="space-between start" class="base-view">
+    <div class="base-content" layout="row" layout-align="space-around center">
+        <div>
+            <img src="/img/welcome.png" class="welcome-image"/>
+        </div>
+        <div class="md-whiteframe-3dp set-input">
+            <form layout="column" layout-align="space-around center">
+                <md-input-container>
+                    <label>Number of sets </label>
+                    <input type="number" data-ng-model="numberOfSets">
+                </md-input-container>
+                <md-button 
+                    class="md-primary md-raised"
+                    data-ng-click="getCards()">
+                        Get Cards
+                </md-button>
+            </form>
+        </div>
+    </div>
+</div>

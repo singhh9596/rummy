@@ -1,0 +1,30 @@
+<md-dialog>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Shuffle Type</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-tooltip md-direction="bottom">
+            Close
+          </md-tooltip>
+          <md-icon md-svg-src="/img/ic_close_48px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+        <div class="md-dialog-content shuffle-dialog-container">
+            <div>Please choose your shuffle type</div>
+            <md-radio-group ng-model="shuffleTechnique" class="md-primary">
+                <md-radio-button ng-repeat="type in shuffleTypes" data-ng-value="type">
+                    {{ type }}<br/>
+                </md-radio-button>
+            </md-radio-group>
+        </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-button class="md-primary" ng-click="shuffle()" data-ng-disabled="!shuffleTechnique">
+        Shuffle
+      </md-button>
+    </md-dialog-actions>
+</md-dialog>

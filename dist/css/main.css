@@ -1,0 +1,71 @@
+.root {
+    height: 100%;
+    background: #E91E63;
+}
+
+.root > div {
+  height: 100%;
+  overflow: auto;
+}
+
+base-app,
+.base-view {
+  height: 100%;
+}
+
+.base-content {
+  align-self: center;
+  width: 100%;
+  flex: 1;
+}
+
+.welcome-image {
+  transform: scale(2);
+}
+
+.set-input {
+  padding: 3em;
+  background: white;
+}
+
+.deck-view {
+  position: relative;
+  height: 100%;
+}
+
+.deck-container {
+  height: 100%;
+  overflow: auto;
+}
+
+.deck {
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.card {
+  align-items: center;
+  border-radius: 1em;
+}
+
+.card-content {
+  width: 100%;
+  align-items: center;
+  min-height: 13em;
+  border-radius: .35em;
+}
+
+.shuffle {
+  position: absolute;
+  bottom: 3em;
+  right: 3em;
+}
+
+.shuffle-dialog-container {
+  min-width: 500px;
+  min-height: 250px;
+}
+
+.shuffle-dialog-container > div {
+  margin-bottom: 16px;
+}
